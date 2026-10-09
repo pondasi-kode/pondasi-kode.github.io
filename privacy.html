@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Kebijakan privasi untuk OAuth desktop client Pondasi Kode rclone.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://pondasi-kode.github.io/privacy.html">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Kebijakan Privasi — Pondasi Kode</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Beranda Pondasi Kode">
+      <span class="brand-mark" aria-hidden="true">PK</span>
+      <span>Pondasi Kode</span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a href="/">Beranda</a>
+      <a aria-current="page" href="/privacy.html">Privasi</a>
+      <a href="/terms.html">Ketentuan</a>
+    </nav>
+  </header>
+
+  <main class="policy">
+    <header class="policy-heading">
+      <p class="eyebrow">Terakhir diperbarui 9 Oktober 2026</p>
+      <h1>Kebijakan Privasi</h1>
+      <p class="lead">Kebijakan ini menjelaskan cara OAuth desktop client Pondasi Kode rclone mengakses dan memakai data pengguna Google.</p>
+    </header>
+
+    <section>
+      <h2>1. Cakupan</h2>
+      <p>Client ini adalah perkakas internal yang dioperasikan pemilik Pondasi Kode. Ia menghubungkan rclone di perangkat Windows milik pemilik dengan Google Drive milik pemilik, untuk backup, pemeriksaan keutuhan, dan pemulihan. Client tidak ditawarkan kepada umum dan tidak melayani akun pihak lain.</p>
+    </section>
+
+    <section>
+      <h2>2. Data Google yang diakses</h2>
+      <p>Client meminta scope Google Drive. Scope ini memungkinkan client melihat daftar berkas dan folder, membaca metadata dan isi berkas, mengunggah berkas backup, membandingkan hash, serta mengunduh berkas untuk pemulihan.</p>
+      <p>Scope Drive penuh dipakai karena folder backup dibuat pemilik secara manual sebelum OAuth client ini ada, sedangkan scope yang lebih sempit hanya menjangkau berkas yang dibuat client itu sendiri. Dalam pemakaian, remote rclone dipatok ke satu folder khusus Pondasi Kode, tetapi scope OAuth-nya sendiri lebih luas daripada folder itu.</p>
+    </section>
+
+    <section>
+      <h2>3. Cara data Google dipakai</h2>
+      <ul>
+        <li>Menyalin berkas kerja Pondasi Kode yang dipilih ke Google Drive milik pemilik.</li>
+        <li>Melihat daftar berkas backup dan membandingkan ukuran, waktu, serta checksum-nya.</li>
+        <li>Mengunduh berkas yang dipilih saat pemilik melakukan pemulihan.</li>
+        <li>Menelusuri penyebab kegagalan backup yang dijalankan pemilik.</li>
+      </ul>
+      <p>Data pengguna Google tidak dipakai untuk iklan, pembuatan profil, pelatihan model, keputusan kredit, pengawasan, atau tujuan lain di luar fungsi tersebut.</p>
+    </section>
+
+    <section>
+      <h2>4. Penyimpanan dan keamanan</h2>
+      <p>Berkas backup tetap berada di Google Drive milik pemilik. Access token dan refresh token OAuth disimpan secara lokal di konfigurasi rclone milik pemilik dan dikecualikan dari source control. Situs publik ini tidak menerima dan tidak menyimpan token OAuth, isi berkas Drive, maupun kredensial akun.</p>
+    </section>
+
+    <section>
+      <h2>5. Pembagian dan transfer</h2>
+      <p>Data pengguna Google tidak dijual, tidak disewakan, tidak dibagikan kepada pengiklan, dan tidak ditransfer kepada pihak ketiga yang tidak berkaitan. Data hanya diproses oleh Google Drive dan oleh client rclone yang dijalankan secara lokal, sejauh diperlukan untuk backup atau pemulihan yang diminta pemilik.</p>
+    </section>
+
+    <section>
+      <h2>6. Retensi dan penghapusan</h2>
+      <p>Pemilik mengendalikan masa simpan dan penghapusan berkas backup di Google Drive. Kredensial OAuth lokal dapat dihapus dengan menghapus konfigurasi remote rclone. Akses juga dapat dicabut kapan saja lewat pengaturan keamanan Akun Google. Pencabutan akses menghentikan panggilan API berikutnya, tetapi tidak dengan sendirinya menghapus berkas yang sudah tersimpan di Drive.</p>
+    </section>
+
+    <section>
+      <h2>7. Kendali pengguna</h2>
+      <p>Pemilik dapat memeriksa, mengunduh, memindahkan, atau menghapus berkas backup langsung di Google Drive; menghentikan proses backup; mencabut izin OAuth; mengganti OAuth client; atau menghentikan seluruh integrasi.</p>
+    </section>
+
+    <section>
+      <h2>8. Penggunaan Terbatas</h2>
+      <p>Pemakaian informasi yang diterima dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, termasuk persyaratan Limited Use.</p>
+    </section>
+
+    <section>
+      <h2>9. Data hosting situs</h2>
+      <p>Situs kebijakan ini di-host di GitHub Pages. Situs tidak memakai analytics, pelacak iklan, cookie, formulir, ataupun JavaScript. GitHub dapat memproses informasi pengunjung seperti alamat IP untuk keamanan dan pengoperasian layanannya, menurut <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
+    </section>
+
+    <section>
+      <h2>10. Perubahan dan kontak</h2>
+      <p>Kebijakan ini diperbarui sebelum terjadi perubahan material pada akses atau pemakaian data Google oleh aplikasi. Pertanyaan yang tidak bersifat sensitif dapat dikirim lewat <a href="https://github.com/pondasi-kode/pondasi-kode.github.io/issues">issue tracker publik</a> milik repository situs ini. Jangan mengirim kredensial, token, data pribadi, atau informasi keamanan yang sensitif lewat issue publik.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pondasi Kode · Perkakas backup internal</p>
+    <p><a href="/">Beranda</a> · <a href="/terms.html">Ketentuan</a></p>
+  </footer>
+</body>
+</html>

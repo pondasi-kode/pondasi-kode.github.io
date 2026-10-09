@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informasi publik untuk OAuth desktop client Pondasi Kode rclone.">
+  <meta name="referrer" content="no-referrer">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://pondasi-kode.github.io/">
+  <link rel="stylesheet" href="/assets/style.css">
+  <title>Pondasi Kode — Informasi Aplikasi OAuth</title>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="/" aria-label="Beranda Pondasi Kode">
+      <span class="brand-mark" aria-hidden="true">PK</span>
+      <span>Pondasi Kode</span>
+    </a>
+    <nav aria-label="Navigasi utama">
+      <a aria-current="page" href="/">Beranda</a>
+      <a href="/privacy.html">Privasi</a>
+      <a href="/terms.html">Ketentuan</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <p class="eyebrow">Situs informasi OAuth</p>
+      <h1 id="page-title">Informasi aplikasi Pondasi Kode rclone</h1>
+      <p class="lead">Pondasi Kode rclone adalah OAuth desktop client yang dipakai pemilik Pondasi Kode untuk mencadangkan, memeriksa, dan memulihkan berkas kerja antara perangkatnya sendiri dan Google Drive miliknya sendiri.</p>
+      <div class="actions">
+        <a class="button primary" href="/privacy.html">Baca kebijakan privasi</a>
+        <a class="button secondary" href="/terms.html">Baca ketentuan penggunaan</a>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="purpose-title">
+      <div>
+        <p class="section-label">Tujuan</p>
+        <h2 id="purpose-title">Perkakas backup internal, bukan layanan publik</h2>
+      </div>
+      <div class="prose">
+        <p>Client ini dioperasikan untuk pekerjaan internal Pondasi Kode. Ia tidak ditawarkan sebagai layanan login, tidak mempunyai pendaftaran pengguna, dan tidak mengakses Google Drive milik orang lain.</p>
+        <p>Halaman ini ada supaya identitas aplikasi, akses yang dimintanya, dan cara datanya dipakai dapat dibaca sebelum izin diberikan. Halaman ini bukan toko dan bukan dokumentasi produk Pondasi Kode.</p>
+      </div>
+    </section>
+
+    <section class="cards" aria-label="Cara kerja integrasi">
+      <article>
+        <span class="step">01</span>
+        <h2>Otorisasi</h2>
+        <p>Pemilik memberi izin kepada desktop client lewat layar persetujuan OAuth Google.</p>
+      </article>
+      <article>
+        <span class="step">02</span>
+        <h2>Penyalinan</h2>
+        <p>rclone menyalin folder kerja yang dipilih ke satu folder khusus Pondasi Kode di Google Drive milik pemilik.</p>
+      </article>
+      <article>
+        <span class="step">03</span>
+        <h2>Pemeriksaan dan pemulihan</h2>
+        <p>Checksum memastikan salinannya utuh, lalu berkas dapat dipulihkan saat perangkat diganti atau data hilang.</p>
+      </article>
+    </section>
+
+    <section class="section notice" aria-labelledby="boundary-title">
+      <div>
+        <p class="section-label">Batas publik</p>
+        <h2 id="boundary-title">Situs ini tidak menangani data Drive</h2>
+      </div>
+      <div class="prose">
+        <p>Token OAuth tetap berada di konfigurasi rclone lokal milik pemilik. Berkas backup tetap berada di Google Drive milik pemilik. Situs statis ini tidak mempunyai login, formulir, analytics, iklan, cookie, JavaScript, ataupun backend.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Pondasi Kode · Perkakas backup internal</p>
+    <p><a href="/privacy.html">Privasi</a> · <a href="/terms.html">Ketentuan</a></p>
+  </footer>
+</body>
+</html>
