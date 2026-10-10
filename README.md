@@ -6,8 +6,8 @@ Repository publik ini menjadi sumber situs GitHub Pages tingkat organisasi di
 ## Tujuan dan peran
 
 Situs ini adalah halaman identitas dan kebijakan publik untuk OAuth desktop client
-`Pondasi Kode rclone`. Client itu perkakas internal yang dipakai pemilik Pondasi Kode untuk
-mencadangkan, memeriksa, dan memulihkan berkas kerja antara perangkatnya sendiri dan Google Drive
+`Pondasi Kode rclone`. Client itu tool internal yang dipakai pemilik Pondasi Kode untuk
+mem-backup, memeriksa, dan memulihkan file kerja antara perangkatnya sendiri dan Google Drive
 miliknya sendiri.
 
 ```mermaid
@@ -17,7 +17,7 @@ flowchart LR
     S -. menyediakan URL beranda dan kebijakan .-> A[Google Auth Platform]
 ```
 
-Situs ini hanya menjelaskan integrasi tersebut. Ia tidak menjadi perantara transfer berkas, tidak
+Situs ini hanya menjelaskan integrasi tersebut. Ia tidak menjadi perantara transfer file, tidak
 menerima token OAuth, dan tidak mengakses Google Drive. Situs ini bukan toko dan bukan dokumentasi
 produk Pondasi Kode.
 
@@ -40,7 +40,7 @@ bukti bahwa verification Google sudah selesai.
 | `privacy.html` | `/privacy.html` | Akses, pemakaian, penyimpanan, pembagian, retensi, dan kendali data pengguna Google |
 | `terms.html` | `/terms.html` | Ketentuan pemakaian internal dan batas layanan |
 | `assets/style.css` | tidak berlaku | Tampilan bersama saja; tanpa pelacak dan tanpa script |
-| `.nojekyll` | tidak berlaku | Menyajikan berkas statis tanpa proses build Jekyll |
+| `.nojekyll` | tidak berlaku | Menyajikan file statis tanpa proses build Jekyll |
 
 ## Batas informasi publik
 
@@ -50,15 +50,15 @@ memuat:
 - OAuth client ID atau client secret;
 - access token, refresh token, atau `rclone.conf`;
 - detail Akun Google atau informasi kontak pribadi;
-- source code, dokumen kerja, histori chat, riset, atau berkas backup Pondasi Kode;
+- source code, dokumen kerja, histori chat, riset, atau file backup Pondasi Kode;
 - analytics, pelacak iklan, formulir login, atau formulir pengumpulan data.
 
 ## Pemeliharaan
 
-Teks publik berbahasa Indonesia. Kode, nama berkas, URL, scope API, serta nama resmi produk dan
+Teks publik berbahasa Indonesia. Kode, nama file, URL, scope API, serta nama resmi produk dan
 kebijakan dipertahankan dalam bentuk aslinya.
 
 Isi beranda, kebijakan privasi, konfigurasi branding di Google Auth Platform, dan perilaku rclone yang
 sebenarnya harus selalu sejalan. Kebijakan diperbarui lebih dulu, baru scope atau cara pemakaian data
-pengguna Google diubah. Setiap tautan diperiksa secara lokal, lalu perubahan di-commit dan di-push ke
+pengguna Google diubah. Setiap link diperiksa secara lokal, lalu perubahan di-commit dan di-push ke
 `main`; GitHub Pages menerbitkannya sesudah itu.
